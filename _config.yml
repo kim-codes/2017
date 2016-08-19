@@ -14,10 +14,14 @@ google_analytics: #google analytics code XX-nnnnnnnn-n
 
 # Social network info
 social:
-    - email: info@cusec.net
-    - github: cusec
-    - twitter: cusec
-    - facebook:
+    - title: email
+      url: mailto:info@cusec.net
+    - title: twitter
+      url: https://twitter.com/cusec
+    - title: facebook
+      url: https://www.facebook.com/CUSEC-9884406702/
+    - title: youtube
+      url: https://www.youtube.com/channel/UCZ7j8F6h1CxD-uC0od9rHBw
 
 
 # Build settings
