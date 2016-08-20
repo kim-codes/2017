@@ -5,7 +5,8 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="Dhiren Audich <dhiren@audich.net>">
     <meta name="keywords" content="cusec, software engineering, computer science, 2017, undergraduate, conference, montreal" />
-    <link rel="shortcut icon" href="{{ "/assets/ico/favicon.ico" | prepend: site.baseurl }}">
+    <!-- Place favicon.ico and apple-touch-icon.png in the ico directory -->
+    <link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}">
 
     <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 
@@ -33,11 +34,8 @@
     <!-- Custom styles -->
     <link href="{{ "/assets/css/style.css" | prepend: site.baseurl }}" rel="stylesheet">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
-
     <!-- Modernizr JS -->
-    <script src="{{ "/js/modernizr-2.6.2.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/js/modernizr-2.6.2.min.js" | prepend: site.baseurl }}"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
