@@ -4,26 +4,13 @@
 
 $font-primary: 'Source Sans Pro', Arial, sans-serif;
 
+@import '_colours';
+
 // Overrides
 $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
-
-$brand-primary: #FC4349 !default;
-$brand-secondary: #002F2F !default;
-
-$brand-white: #fff;
-$brand-black: #000;
-$brand-darker: #444;
-$brand-gray: #ccc;
-$brand-lighter: #e9e9e9;
-$brand-body-color: #818892;
-$brand-selection-color: #f9f6f0;
-$brand-overlay-color: #3b3d40;
-$brand-bg-color: $brand-white;
-
-$input-border-focus:  $brand-primary !default;
-$form-group-margin-bottom:       30px !default;
+$form-group-margin-bottom: 30px !default;
 
 // Mixin
 @mixin transition($transition) {
@@ -51,13 +38,6 @@ $form-group-margin-bottom:       30px !default;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
-}
-@mixin flex() {
-	display: -webkit-box;
-  	display: -moz-box;
-  	display: -ms-flexbox;
-  	display: -webkit-flex;
-  	display: flex;
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
@@ -164,7 +144,6 @@ $form-group-margin-bottom:       30px !default;
 }
 
 @mixin icomoon() {
-
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -176,15 +155,11 @@ $form-group-margin-bottom:       30px !default;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
 }
 
 // Import
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
-
-
-
 
 /* =======================================================
 *
@@ -264,8 +239,6 @@ h1, h2, h3, h4, h5, h6 {
   @include angle(both, true);
 }
 
-
-
 #fh5co-header {
 	// position: relative;
 	position: absolute;
@@ -274,8 +247,6 @@ h1, h2, h3, h4, h5, h6 {
 	opacity: 1;
 	top: 0;
 	margin-top: 40px;
-
-
 	@media screen and (max-width: $screen-sm) {
 		margin-top: 0;
 		background: $brand-white;
@@ -464,7 +435,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
 #fh5co-home {
 	background-color: transparent;
     background-repeat: no-repeat;
@@ -516,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
 			color: rgba(255,255,255,1);
 			margin: 0 0 20px 0;
             padding-bottom: 0.5em;
-            border-bottom: 2px solid $brand-lighter;
+            border-bottom: 2px solid $brand-primary;
 		}
 		h2 {
 			font-size: 28px;
@@ -526,8 +496,8 @@ h1, h2, h3, h4, h5, h6 {
 			margin: 0;
 		}
         .logo {
-            display: flex;
-            padding-bottom: 2em;
+            @include flex;
+            padding-bottom: 75px;
             img {
                 margin: auto;
                 width: 28em;
@@ -535,8 +505,6 @@ h1, h2, h3, h4, h5, h6 {
         }
 	}
 }
-
-
 
 // Slant
 .slant {
@@ -562,7 +530,6 @@ h1, h2, h3, h4, h5, h6 {
 	bottom: 0;
 	margin-top: -150px;
 	z-index: 10;
-	padding-bottom: 7em;
 	@media screen and (max-width: $screen-sm) {
 		padding-bottom: 3em;
 	}
@@ -657,75 +624,28 @@ h1, h2, h3, h4, h5, h6 {
 				}
 			}
 		}
-
 	}
 }
 
-
-
-.watch-video {
-	text-align: center;
-	width: 100%;
-	display: block;
-	float: left;
-	span {
-		display: block;
-		margin-bottom: 20px;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		font-weight: bold;
-	}
-	.btn-video {
-		display: block;
-		font-size: 60px;
-		height: 120px;
-		width: 120px;
-		margin: 0 auto;
-		border: 2px solid $brand-primary;
-		line-height: 0px;
-		display: table;
-		text-align: center;
-		@include border-radius(50%);
-		&:hover, &:focus, &:active {
-			text-decoration: none;
-		}
-		i {
-			position: relative;
-			display: table-cell;
-			vertical-align: middle;
-			margin: 0;
-			padding: 0;
-			right: -9px;
-			// top: -1px;
-			@include transition(.3s);
-		}
-		&:hover, &:focus {
-			i {
-				-webkit-transform: scale(1.1);
-				-moz-transform: scale(1.1);
-				-ms-transform: scale(1.1);
-				-o-transform: scale(1.1);
-				transform: scale(1.1);
-			}
-		}
-	}
-}
-
-
-#fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about {
+#fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about, #fh5co-venue {
 	padding: 4em 0;
 	@media screen and (max-width: $screen-sm) {
 		padding: 2em 0;
 	}
 }
+
+#fh5co-venue{
+    padding-top: 0;
+}
+
 #fh5co-services, #fh5co-work, #fh5co-counters {
 	padding: 7em 0;
 	@media screen and (max-width: $screen-sm) {
 		padding: 4em 0;
 	}
 }
-#fh5co-services {
 
+#fh5co-services {
 
 	@include fh5co-gradient;
 
@@ -1107,6 +1027,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-contact {
 	// Contacts
 	padding-bottom: 0;
+    padding-top: 0;
 	.fh5co-contact-info {
 		// color: rgba(255,255,255,.7);
 		padding: 0;

@@ -1,50 +1,113 @@
 ---
 layout: index
 ---
-<!--
+
 <section id="fh5co-intro">
 	<div class="container">
 		<div class="row row-bottom-padded-lg">
-			<div class="fh5co-block to-animate" style="background-image: url(images/img_7.jpg);">
+			<div class="fh5co-block to-animate" style="background-image: url({{ "/assets/images/img_7.jpg" | prepend: site.url }});">
 				<div class="overlay-darker"></div>
 				<div class="overlay"></div>
 				<div class="fh5co-text">
-					<i class="fh5co-intro-icon icon-bulb"></i>
-					<h2>Plan</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					<p><a href="#" class="btn btn-primary">Get In Touch</a></p>
+					<i class="fh5co-intro-icon icon-bolt"></i>
+					<h2>Lightning Talks</h2>
+					<p>Share your ideas and thoughts on a topic of your choosing with the rest of the conference. For 5 mins you are the oracle.</p>
+					<p><a href="#" class="btn btn-primary">Send a Bolt/Show your Spark</a></p>
 				</div>
 			</div>
-			<div class="fh5co-block to-animate" style="background-image: url(images/img_8.jpg);">
+			<div class="fh5co-block to-animate" style="background-image: url({{ "/assets/images/img_8.jpg" | prepend: site.url }});">
 				<div class="overlay-darker"></div>
 				<div class="overlay"></div>
 				<div class="fh5co-text">
-					<i class="fh5co-intro-icon icon-wrench"></i>
-					<h2>Develop</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					<p><a href="#" class="btn btn-primary">Click Me</a></p>
+					<i class="fh5co-intro-icon icon-pied-piper-alt"></i>
+					<h2>Demo Camp</h2>
+					<p>Are you the next PiedPiper&trade; who is Mo-Lo-So? This is your chance to show everyone what you or your team have been working on!</p>
+					<p><a href="#" class="btn btn-primary">Impress the World</a></p>
 				</div>
 			</div>
-			<div class="fh5co-block to-animate" style="background-image: url(images/img_10.jpg);">
+			<div class="fh5co-block to-animate" style="background-image: url({{ "/assets/images/img_10.jpg" | prepend: site.url }});">
 				<div class="overlay-darker"></div>
 				<div class="overlay"></div>
 				<div class="fh5co-text">
 					<i class="fh5co-intro-icon icon-rocket"></i>
-					<h2>Launch</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					<p><a href="#" class="btn btn-primary">Why Us?</a></p>
+					<h2>Resume Upload</h2>
+					<p>Send your resume to all our sponsors all in one click! To participate in the Resume Roast, you should also submit your resume here.</p>
+					<p><a href="#" class="btn btn-primary">Launch your Career</a></p>
 				</div>
 			</div>
-		</div>
-		<div class="row watch-video text-center to-animate">
-			<span>Watch the video</span>
-
-			<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
 		</div>
 	</div>
 </section>
 
-<section id="fh5co-work" data-section="work">
+<section id="fh5co-venue" data-section="venue">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 section-heading text-center">
+				<h2 class="to-animate">Venue</h2>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 to-animate text-center">
+                        <address>
+                            <h3>
+                                Montréal Marriott Château Champlain Hotel<br />
+                                1 Place du Canada<br />
+                                H3B 4C9, Montreal, QC Canada<br />
+                            </h3>
+                            <h3>
+                                For booking information, contact your Head Delegate or send an e-mail to <a href="mailto:#">info@cusec.net</a>.
+                            </h3>
+                        </address>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div id="map" class="to-animate"></div>
+	</div>
+</section>
+
+<section id="fh5co-about" data-section="about">
+	<div class="container">
+        <div class="row">
+            <div class="col-md-6 to-animate">
+                <h3>What is CUSEC<i class="icon-question"></i></h3>
+                <h3>
+                    CUSEC brings together passionate students from across Canada. Meet like-minded peers, learn from
+                    world-renowned experts and discover career opportunities with exciting companies.
+                </h3>
+                <h3>
+                    In 2002, CUSEC was formed by a group of inspired individuals who were dedicated to connecting students
+                    that share a passion for software. After 15 years, the CUSEC organizing team have only become stronger. As
+                    a student run non-profit organization, CUSEC allows for hundreds of students from all across Canada to come
+                    together to talk, learn, and have fun. The team is committed to continuously encouraging and engaging more
+                    and more students.
+                </h3>
+            </div>
+            <div class="col-md-6 to-animate">
+                <h3>Contact Form</h3>
+                <div class="form-group ">
+                    <label for="name" class="sr-only">Name</label>
+                    <input id="name" class="form-control" placeholder="Name" type="text">
+                </div>
+                <div class="form-group ">
+                    <label for="email" class="sr-only">Email</label>
+                    <input id="email" class="form-control" placeholder="Email" type="email">
+                </div>
+                <div class="form-group ">
+                    <label for="phone" class="sr-only">Phone</label>
+                    <input id="phone" class="form-control" placeholder="Phone" type="text">
+                </div>
+                <div class="form-group ">
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group ">
+                    <input class="btn btn-primary btn-lg" value="Send Message" type="submit">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="fh5co-work" data-section="work">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
@@ -355,59 +418,4 @@ layout: index
 			</div>
 		</div>
 	</div>
-</section>
-
-<section id="fh5co-contact" data-section="contact">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 section-heading text-center">
-				<h2 class="to-animate">Get In Touch</h2>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row row-bottom-padded-md">
-			<div class="col-md-6 to-animate">
-				<h3>Contact Info</h3>
-				<ul class="fh5co-contact-info">
-					<li class="fh5co-contact-address ">
-						<i class="icon-home"></i>
-						5555 Love Paradise 56 New Clity 5655, <br>Excel Tower United Kingdom
-					</li>
-					<li><i class="icon-phone"></i> (123) 465-6789</li>
-					<li><i class="icon-envelope"></i>info@freehtml5.co</li>
-					<li><i class="icon-globe"></i> <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></li>
-				</ul>
-			</div>
-
-			<div class="col-md-6 to-animate">
-				<h3>Contact Form</h3>
-				<div class="form-group ">
-					<label for="name" class="sr-only">Name</label>
-					<input id="name" class="form-control" placeholder="Name" type="text">
-				</div>
-				<div class="form-group ">
-					<label for="email" class="sr-only">Email</label>
-					<input id="email" class="form-control" placeholder="Email" type="email">
-				</div>
-				<div class="form-group ">
-					<label for="phone" class="sr-only">Phone</label>
-					<input id="phone" class="form-control" placeholder="Phone" type="text">
-				</div>
-				<div class="form-group ">
-					<label for="message" class="sr-only">Message</label>
-					<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-				</div>
-				<div class="form-group ">
-					<input class="btn btn-primary btn-lg" value="Send Message" type="submit">
-				</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<div id="map" class="to-animate"></div>
 </section> -->

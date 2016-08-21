@@ -14,7 +14,7 @@ google_analytics: #google analytics code XX-nnnnnnnn-n
 
 # Social network info
 social:
-    - title: email
+    - title: envelope
       url: mailto:info@cusec.net
     - title: twitter
       url: https://twitter.com/cusec
