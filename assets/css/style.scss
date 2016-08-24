@@ -281,14 +281,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-home {
-	background-color: transparent;
+    background-color: $brand-secondary;
     background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
 	width: 100%;
 
-	background-color: $brand-primary;
 	color: #fff;
 	overflow: hidden;
 	.gradient {
@@ -301,7 +300,6 @@ h1, h2, h3, h4, h5, h6 {
 		z-index: 2;
 		opacity: .9;
 		-webkit-backface-visibility: hidden; // for Chrome Windows
-		// @include fh5co-gradient;
 	}
 	&, .text-wrap {
 		height: 900px;
@@ -359,7 +357,7 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-transform: rotate(-1.7deg);
 	-o-transform: rotate(-1.7deg);
 	-moz-transform: rotate(-1.7deg);
-	background-color: #fff;
+	background-color: $brand-white;
 	content: "";
 	z-index: 3;
 	display: inline-block;
@@ -480,7 +478,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-venue{
-    padding-top: 0;
+    background-color:$brand-secondary;
+    overflow: hidden;
+	position: relative;
+    color: rgba(255,255,255,.7);
+    &:before, &:after {
+        position: absolute;
+        transform: rotate(-1.7deg);
+        -ms-transform: rotate(-1.7deg);
+        -webkit-transform: rotate(-1.7deg);
+        -o-transform: rotate(-1.7deg);
+        -moz-transform: rotate(-1.7deg);
+        background-color: $brand-white;
+        content: "";
+        z-index: 3;
+        display: inline-block;
+        height: 70px;
+        padding: 0;
+        width: 101%;
+    }
+    &:before {
+        top: 0;
+        margin-top: -35px;
+    }
+    &:after {
+        bottom: 0;
+        margin-bottom: -35px;
+    }
+    h3 {
+        font-size: 24px;
+        color: $brand-white;
+    }
+    .icon {
+        font-size: 70px;
+        margin-bottom: 30px;
+        @include inline-block;
+        &:before {
+            color: $brand-white;
+        }
+    }
+    .section-heading {
+        h2 {
+            color: $brand-white;
+            &.left-border {
+                &:after {
+                    background: rgba(255,255,255,.3);
+                }
+            }
+        }
+    }
 }
 
 // Map
@@ -491,6 +537,21 @@ h1, h2, h3, h4, h5, h6 {
 	@media screen and (max-width: $screen-sm) {
 		height: 200px;
 	}
+}
+
+#fh5co-about {
+    .container-fluid {
+        .row {
+            background-color: $brand-secondary;
+            background-repeat: no-repeat;
+        	background-size: cover;
+        	background-attachment: fixed;
+        	position: relative;
+        	width: auto;
+            height: 450px;
+            overflow: hidden;
+        }
+    }
 }
 
 #fh5co-services, #fh5co-work, #fh5co-counters {
