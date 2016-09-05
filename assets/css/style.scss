@@ -282,16 +282,19 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-home {
     background-color: $brand-secondary;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center!important;
     background-repeat: no-repeat;
-	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
 	width: 100%;
-
 	color: #fff;
 	overflow: hidden;
 	.gradient {
-        background-color: rgba(0,45,45,0.7);
+        background-color: rgba(16,34,43,0.7);
 		position: absolute;
 		top: 0;
 		bottom: 0;
