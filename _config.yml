@@ -9,7 +9,7 @@ description: > # this means to ignore newlines until "baseurl:"
   organized by undergraduate students from Canadian universities held in Montreal every
   year.
 baseurl: "" # starting with /
-url: "daudich.github.io" # the base hostname & protocol for your site
+url: "http://2017.cusec.net" # the base hostname & protocol for your site
 google_analytics: #google analytics code XX-nnnnnnnn-n
 
 # Social network info
