@@ -141,7 +141,7 @@ function init() {
 
     // Create the Google Map using out element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
-    var marker = new google.maps.LatLng(45.4972543,-73.5680462);
+    var marker = new google.maps.LatLng(45.4999217,-73.5658937);
     new google.maps.Marker({
         position: marker,
         map: map,
