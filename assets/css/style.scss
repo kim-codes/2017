@@ -544,16 +544,18 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-about {
     .container-fluid {
-        .row {
-            background-color: $brand-secondary;
-            background-repeat: no-repeat;
-        	background-size: cover;
-        	background-attachment: fixed;
-        	position: relative;
-        	width: auto;
-            height: 450px;
-            overflow: hidden;
-        }
+        padding: 0;
+        margin: 0;
+        background-image: url(http://localhost:4000/assets/images/cusec_2016.jpg);
+        background-color: $brand-secondary;
+        background-repeat: no-repeat;
+    	background-size: cover;
+    	background-attachment: fixed;
+        background-position: center center;
+    	position: relative;
+    	width: 100vw;
+        min-height: 60vh;
+        overflow: hidden;
     }
 }
 
