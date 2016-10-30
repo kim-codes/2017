@@ -244,6 +244,35 @@
 		}
 	};
 
+    var codeConductAnimate = function() {
+		var codeConduct = $('#fh5co-code');
+		if ( codeConduct.length > 0 ) {
+			codeConduct.waypoint( function( direction ) {
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+					var sec = codeConduct.find('.to-animate').length,
+						sec = parseInt((sec * 200) + 400);
+					setTimeout(function() {
+						codeConduct.find('.to-animate').each(function( k ) {
+							var el = $(this);
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+						});
+					}, 200);
+					setTimeout(function() {
+						codeConduct.find('.to-animate-2').each(function( k ) {
+							var el = $(this);
+							setTimeout ( function () {
+								el.addClass('bounceIn animated');
+							},  k * 200, 'easeInOutExpo' );
+						});
+					}, sec);
+					$(this.element).addClass('animated');
+				}
+			} , { offset: '80%' } );
+		}
+	};
+
 	var aboutAnimate = function() {
 		var about = $('#fh5co-about');
 		if ( about.length > 0 ) {
@@ -354,6 +383,7 @@
 		workAnimate();
 		testimonialAnimate();
 		schoolsAnimate();
+        codeConductAnimate();
 		countersAnimate();
 		contactAnimate();
 	});
