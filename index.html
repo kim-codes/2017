@@ -1,96 +1,14 @@
 ---
 layout: index
+permalink: /
 ---
+{% comment %}
+{% include intro.html %}
+{% endcomment %}
 
-<!-- <section id="fh5co-intro">
-	<div class="container">
-		<div class="row row-bottom-padded-lg">
-			<div class="fh5co-block to-animate" style="background-image: url({{ "/assets/images/img_7.jpg" | prepend: site.url }});">
-				<div class="overlay-darker"></div>
-				<div class="overlay"></div>
-				<div class="fh5co-text">
-					<i class="fh5co-intro-icon icon-bolt"></i>
-					<h2>Lightning Talks</h2>
-					<p>Share your ideas and thoughts on a topic of your choosing with the rest of the conference. For 5 mins you are the oracle.</p>
-					<p><a href="#" class="btn btn-primary">Show your Spark</a></p>
-				</div>
-			</div>
-			<div class="fh5co-block to-animate" style="background-image: url({{ "/assets/images/img_8.jpg" | prepend: site.url }});">
-				<div class="overlay-darker"></div>
-				<div class="overlay"></div>
-				<div class="fh5co-text">
-					<i class="fh5co-intro-icon icon-pied-piper-alt"></i>
-					<h2>Demo Camp</h2>
-					<p>Are you the next PiedPiper&trade; who is Mo-Lo-So? This is your chance to show everyone what you or your team have been working on!</p>
-					<p><a href="#" class="btn btn-primary">Impress the World</a></p>
-				</div>
-			</div>
-			<div class="fh5co-block to-animate" style="background-image: url({{ "/assets/images/img_10.jpg" | prepend: site.url }});">
-				<div class="overlay-darker"></div>
-				<div class="overlay"></div>
-				<div class="fh5co-text">
-					<i class="fh5co-intro-icon icon-rocket"></i>
-					<h2>Resume Upload</h2>
-					<p>Send your resume to all our sponsors all in one click! To participate in the Resume Roast, you should also submit your resume here.</p>
-					<p><a href="#" class="btn btn-primary">Launch your Career</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
+{% include venue.html %}
 
-<section id="fh5co-venue" data-section="venue">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 section-heading text-center">
-				<h2 class="to-animate">Venue</h2>
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 to-animate text-center">
-                        <address>
-                            <h3 class="to-animate">
-                                Hotel Bonaventure Montréal<br />
-                                900 DE LA GAUCHETIERE W<br />
-                                H5A 1E4, Montréal, QC Canada<br />
-                            </h3>
-                            <h3 class="to-animate">
-                                For booking information, contact your Head Delegate or send an e-mail to <a href="mailto:#">info@cusec.net</a>.
-                            </h3>
-                        </address>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-    <div id="map" class="to-animate"></div>
-</section>
-
-<section id="fh5co-about" data-section="about">
-	<div class="container">
-        <div class="row">
-            <div class="col-md-8 section-heading text-center">
-                <h2 class="to-animate">About</h2>
-                <div class="text-left">
-                    <h3 class="to-animate"><strong>What is CUSEC?</strong></h3>
-                    <p class="to-animate">
-                        CUSEC brings together passionate students from across Canada. Meet like-minded peers, learn from
-                        world-renowned experts and discover career opportunities with exciting companies.
-                    </p>
-                    <p class="to-animate">
-                        In 2002, CUSEC was formed by a group of inspired individuals who were dedicated to connecting students
-                        that share a passion for software. After 15 years, the CUSEC organizing team have only become stronger. As
-                        a student run non-profit organization, CUSEC allows for hundreds of students from all across Canada to come
-                        together to talk, learn, and have fun. The team is committed to continuously encouraging and engaging more
-                        and more students.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row" style="background-image: url({{ "/assets/images/cusec_2016.jpg" | prepend: site.url }});">
-        </div>
-    </div>
-</section>
+{% include about.html %}
 
 <!-- <section id="fh5co-work" data-section="work">
 	<div class="container">
@@ -261,48 +179,6 @@ layout: index
 				</div>
 			</div>
 
-
-		</div>
-	</div>
-</section>
-
-
-<section id="fh5co-services" data-section="services">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 section-heading text-left">
-				<h2 class=" left-border to-animate">Services</h2>
-				<div class="row">
-					<div class="col-md-8 subtext to-animate">
-						<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-				<i class="icon to-animate-2 icon-anchor"></i>
-				<h3>Brand &amp; Strategy</h3>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-			</div>
-			<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-				<i class="icon to-animate-2 icon-layers2"></i>
-				<h3>Web &amp; Interface</h3>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-			</div>
-
-			<div class="clearfix visible-sm-block"></div>
-
-			<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-				<i class="icon to-animate-2 icon-video2"></i>
-				<h3>Photo &amp; Video</h3>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-			</div>
-			<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-				<i class="icon to-animate-2 icon-monitor"></i>
-				<h3>CMS &amp; eCommerce</h3>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-			</div>
 
 		</div>
 	</div>

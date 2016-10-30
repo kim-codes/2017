@@ -42,7 +42,29 @@
 
 	// Page Nav
 	var clickMenu = function() {
+        // Read the cookie and if it's defined scroll to id
+        var scroll = Cookies.get('scroll');
+        if(scroll){
+            var section = scroll,
+                navbar = $('#navbar');
+				if ( $('[data-section="' + section + '"]').length ) {
+			    	$('html, body').animate({
+			        	scrollTop: $('[data-section="' + section + '"]').offset().top
+			    	}, 500);
+			   }
+		    if ( navbar.is(':visible')) {
+		    	navbar.removeClass('in');
+		    	navbar.attr('aria-expanded', 'false');
+		    	$('.js-fh5co-nav-toggle').removeClass('active');
+		    }
+            Cookies.remove('scroll');
+        }
+
 		$('#navbar a:not([class="external"])').click(function(event){
+            if (location.pathname != '/'){
+                Cookies.set('scroll', $(this).data('nav-section'));
+                window.location.href = location.protocol + '//' + location.host;
+            }
 			var section = $(this).data('nav-section'),
                 navbar = $('#navbar');
 				if ( $('[data-section="' + section + '"]').length ) {
@@ -193,15 +215,15 @@
 		}
 	};
 
-	var servicesAnimate = function() {
-		var services = $('#fh5co-services');
-		if ( services.length > 0 ) {
-			services.waypoint( function( direction ) {
+	var schoolsAnimate = function() {
+		var schools = $('#fh5co-schools');
+		if ( schools.length > 0 ) {
+			schools.waypoint( function( direction ) {
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					var sec = services.find('.to-animate').length,
+					var sec = schools.find('.to-animate').length,
 						sec = parseInt((sec * 200) + 400);
 					setTimeout(function() {
-						services.find('.to-animate').each(function( k ) {
+						schools.find('.to-animate').each(function( k ) {
 							var el = $(this);
 							setTimeout ( function () {
 								el.addClass('fadeInUp animated');
@@ -209,7 +231,36 @@
 						});
 					}, 200);
 					setTimeout(function() {
-						services.find('.to-animate-2').each(function( k ) {
+						schools.find('.to-animate-2').each(function( k ) {
+							var el = $(this);
+							setTimeout ( function () {
+								el.addClass('bounceIn animated');
+							},  k * 200, 'easeInOutExpo' );
+						});
+					}, sec);
+					$(this.element).addClass('animated');
+				}
+			} , { offset: '80%' } );
+		}
+	};
+
+    var codeConductAnimate = function() {
+		var codeConduct = $('#fh5co-code');
+		if ( codeConduct.length > 0 ) {
+			codeConduct.waypoint( function( direction ) {
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+					var sec = codeConduct.find('.to-animate').length,
+						sec = parseInt((sec * 200) + 400);
+					setTimeout(function() {
+						codeConduct.find('.to-animate').each(function( k ) {
+							var el = $(this);
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+						});
+					}, 200);
+					setTimeout(function() {
+						codeConduct.find('.to-animate-2').each(function( k ) {
 							var el = $(this);
 							setTimeout ( function () {
 								el.addClass('bounceIn animated');
@@ -331,7 +382,8 @@
         aboutAnimate();
 		workAnimate();
 		testimonialAnimate();
-		servicesAnimate();
+		schoolsAnimate();
+        codeConductAnimate();
 		countersAnimate();
 		contactAnimate();
 	});

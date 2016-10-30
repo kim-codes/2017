@@ -4,17 +4,20 @@
         <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <!-- Mobile Toggle Menu Button -->
-                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar"><i></i></a>
                 <a class="navbar-brand" href="{{ "/"  | prepend: site.baseurl }}">{{ site.title }}</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="{{"/" | prepend: site.baseurl }}" data-nav-section="home"><span>Home</span></a></li>
-                    <!-- <li><a href="{{"/schedule/" | prepend: site.baseurl }}" data-nav-section="schedule"><span>Schedule</span></a></li> -->
-                    <!-- <li><a href="{{"/speakers/" | prepend: site.baseurl }}" data-nav-section="speakers"><span>Speakers</span></a></li> -->
-                    <!-- <li><a href="{{"/sponsors/" | prepend: site.baseurl }}" data-nav-section="sponsors"><span>Sponsors</span></a></li> -->
                     <li><a href="{{"#fh5co-venue" | prepend: site.baseurl }}" data-nav-section="venue"><span>Venue</span></a></li>
                     <li><a href="{{"#fh5co-about" | prepend: site.baseurl }}" data-nav-section="about"><span>About</span></a></li>
+                    <!-- <li><a href="{{"/schedule/" | prepend: site.baseurl }}" data-nav-section="schedule"><span>Schedule</span></a></li>
+                    <li><a href="{{"/speakers/" | prepend: site.baseurl }}" data-nav-section="speakers"><span>Speakers</span></a></li>
+                    <li><a href="{{"/sponsors/" | prepend: site.baseurl }}" data-nav-section="sponsors"><span>Sponsors</span></a></li> -->
+                    <li><a href="{{"/schools/" | prepend: site.baseurl }}" data-nav-section="schools" class="external"><span>Schools</span></a></li>
+                    <li><a href="{{"/codeofconduct/" | prepend: site.baseurl }}" data-nav-section="code" class="external"><span>Code of Conduct</span></a></li>
                 </ul>
             </div>
         </nav>
