@@ -1314,3 +1314,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
+.register a {
+  background-color: $brand-primary !important;
+  color: #ffffff !important;
+  border-radius: 3px !important;
+}
+
+.navbar-fixed-top .register a {
+  border-radius: 0 !important;
+}
